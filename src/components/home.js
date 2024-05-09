@@ -48,7 +48,7 @@ export const Home = () => {
  }
 
  const getuserdata=async()=>{
-  const response=await fetch(`http://${state.backend}:${state.port}/api/auth/getuser`,{
+  const response=await fetch(`https://ceg-home-website.onrender.com/api/auth/getuser`,{
     method:'get',
     headers:{
         'Content-Type':'application/json',
@@ -66,7 +66,7 @@ localStorage.setItem('room_no',json.room_no)
 dispatch({ type: 'UPDATE_EMAIL', payload: json.user.email });
 dispatch({ type: 'UPDATE_MOBILE', payload: json.user.mobile });
 dispatch({ type: 'UPDATE_room', payload: json.room_no });
-dispatch({ type: 'UPDATE_photo_url', payload: `http://${state.backend}:${state.port}/api/a/newupload/${json.user.photo_url}` });
+dispatch({ type: 'UPDATE_photo_url', payload: `https://ceg-home-website.onrender.com/api/a/newupload/${json.user.photo_url}` });
 NODisableli()
 }else{
   setroombook_alert("")

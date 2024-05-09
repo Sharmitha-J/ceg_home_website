@@ -34,7 +34,7 @@ dispatch({ type: 'UPDATE_AVALUE', payload: true });
 
 
  const getalldata=async (e)=>{
-  const response=await fetch(`http://${state.backend}:${state.port}/api/ad/getallusers`,{
+  const response=await fetch(`https://ceg-home-website.onrender.com/api/ad/getallusers`,{
       method:'get',
       headers:{
           'Content-Type':'application/json',
@@ -94,7 +94,7 @@ dispatch({ type: 'UPDATE_AVALUE', payload: true });
 
  const refreshdash=async(e)=>{
     let elly=document.getElementById('noofcomp');
-    const response=await fetch(`http://${state.backend}:${state.port}/api/ad/getallstats`,{
+    const response=await fetch(`https://ceg-home-website.onrender.com/api/ad/getallstats`,{
       method:'get',
       headers:{
           'Content-Type':'application/json',

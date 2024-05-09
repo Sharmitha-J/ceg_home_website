@@ -33,7 +33,7 @@ dispatch({ type: 'UPDATE_AVALUE', payload: true });
 
 
  const getalldata=async (e)=>{
-  const response=await fetch(`http://${state.backend}:${state.port}/api/ad/getallfeedback`,{
+  const response=await fetch(`https://ceg-home-website.onrender.com/api/ad/getallfeedback`,{
       method:'get',
       headers:{
           'Content-Type':'application/json',
@@ -82,7 +82,7 @@ dispatch({ type: 'UPDATE_AVALUE', payload: true });
 const markread=async(e)=>{
     const dide=e.target.id
     let delid=dide.slice(1,)
-    const response=await fetch(`http://${state.backend}:${state.port}/api/c/delfeedback`,{
+    const response=await fetch(`https://ceg-home-website.onrender.com/api/c/delfeedback`,{
       method:'DELETE',
       headers:{
           'Content-Type':'application/json'

@@ -34,7 +34,7 @@ export const Admincomplains = () => {
 
 
  const getalldata=async (e)=>{
-  const response=await fetch(`http://${state.backend}:${state.port}/api/ad/allcomplains`,{
+  const response=await fetch(`https://ceg-home-website.onrender.com/api/ad/allcomplains`,{
       method:'get',
       headers:{
           'Content-Type':'application/json',
@@ -90,7 +90,7 @@ export const Admincomplains = () => {
 const deletereq=async(e)=>{
     const dide=e.target.id
     let delid=dide.slice(1,)
-    const response=await fetch(`http://${state.backend}:${state.port}/api/c/newcomplaina`,{
+    const response=await fetch(`https://ceg-home-website.onrender.com/api/c/newcomplaina`,{
       method:'DELETE',
       headers:{
           'Content-Type':'application/json'
@@ -124,7 +124,7 @@ const deletereq=async(e)=>{
 
  const refreshdash=async(e)=>{
     let elly=document.getElementById('noofcomp');
-    const response=await fetch(`http://${state.backend}:${state.port}/api/ad/getallstats`,{
+    const response=await fetch(`https://ceg-home-website.onrender.com/api/ad/getallstats`,{
       method:'get',
       headers:{
           'Content-Type':'application/json',
