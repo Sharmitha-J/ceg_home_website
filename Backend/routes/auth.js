@@ -41,6 +41,7 @@ router.post('/createuser',[
     res.json({message:`Account created Successfully`,response:true})}}
     catch(error){
         console.log(error.message)
+        console.log("hiiiiiiiiiiiiiiii")
         res.status(500).json({message:"Some error oocured",response:false})
     }
 })
