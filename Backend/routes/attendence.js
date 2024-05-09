@@ -76,8 +76,8 @@ router.post('/attend', fetchuser, attendance_upload.single("file"),async (req,re
         const room = await Room.find({ user: req.user })
         const usera = await User.findById(req.user)
     
-        let temp_photourl=`http://localhost:5000/api/a/newupload/${rfile}`
-        let user_photourl=`http://localhost:5000/api/a/newupload/${usera.photo_url}`
+        let temp_photourl=`https://ceg-home-website.onrender.com/api/a/newupload/${rfile}`
+        let user_photourl=`https://ceg-home-website.onrender.com/api/a/newupload/${usera.photo_url}`
         
         
         let fresult=false,fmessage="",spoof=1
@@ -234,7 +234,7 @@ const newve = router.post("/newupload", upload.single("file"), fetchuser,async (
         let ugatet = await User.updateOne({_id:user_data._id},{$set: {photo_url: req.file.filename}});
         
 
-    const imgUrl = `http://localhost:5000/api/a/newupload/${req.file.filename}`;
+    const imgUrl = `https://ceg-home-website.onrender.com/api/a/newupload/${req.file.filename}`;
   
     return res.status(200).json({message:"Photo uploaded Succesfully",url:imgUrl,response:true})
 });
