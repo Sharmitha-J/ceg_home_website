@@ -80,7 +80,7 @@ NODisableli()
 
 }
  const getroomnumbers=async()=>{
-  const response=await fetch(`http://127.0.0.1:5000/api/b/roomnumbers`,{
+  const response=await fetch(`https://ceg-home-website.onrender.com/api/b/roomnumbers`,{
     method:'get',
     headers:{
         'Content-Type':'application/json',
@@ -103,7 +103,7 @@ for(let i=0;i<json.length;i++){
    
     let roomno={sroom}
     e.preventDefault();
-    const response=await fetch('http://127.0.0.1:5000/api/b/bookroom',{
+    const response=await fetch('https://ceg-home-website.onrender.com/api/b/bookroom',{
         method:'POST',
         headers:{
             'Content-Type':'application/json',
