@@ -4,7 +4,7 @@ const fetchuser = require('../middleware/fetchuser');
 const GridFsStorage = require("multer-gridfs-storage").GridFsStorage;
 
 const storage = new GridFsStorage({
-    url:"mongodb://127.0.0.1:27017/app",
+    url:"mongodb+srv://sharmithaj23:sharmithaj23@hostelproject.xalbqpy.mongodb.net/?retryWrites=true&w=majority&appName=HostelProject/app",
     options: { useNewUrlParser: true, useUnifiedTopology: true },
     
     file: (req, file) => {
