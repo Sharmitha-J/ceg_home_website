@@ -1,6 +1,6 @@
 # Hostel Management System
 
-The Hostel Management System is a comprehensive application designed to facilitate the management and operations of a hostel. It offers various features such as registration/sign-in, room booking, QR-based gate pass token, attendance with face and location verification, complaint section, feedback section, and an admin dashboard.
+The Hostel Management System is a comprehensive application designed to facilitate the management and operations of a hostel. It offers various features such as registration/sign-in, room booking, QR-based gate pass token, complaint section, feedback section, and an admin dashboard.
 
 
 ## Key Features:
@@ -80,5 +80,5 @@ e.g. -> const mongouri ="mongodb://127.0.0.1:27017/app"
 `NodeJS`,
 `ExpressJS`,
 `MongoDB`,
-`ReactJS`,
+`ReactJS`
 
