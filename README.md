@@ -39,7 +39,7 @@ The Hostel Management System is a comprehensive application designed to facilita
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/paramsgit/Hostel_minor_project.git
+git clone https://github.com/Sharmitha-J/ceg_home_website.git
 ```
 2. Install the necessary dependencies:
 ```bash
